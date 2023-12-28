@@ -194,7 +194,7 @@ func MustNewRegexp(s string) Regexp {
 
 type Module struct {
 	Prober  string        `yaml:"prober,omitempty" query:"prober"`
-	Timeout time.Duration `yaml:"timeout,omitempty"`
+	Timeout time.Duration `yaml:"timeout,omitempty" query:"timeout"`
 	HTTP    HTTPProbe     `yaml:"http,omitempty"`
 	TCP     TCPProbe      `yaml:"tcp,omitempty"`
 	ICMP    ICMPProbe     `yaml:"icmp,omitempty"`
